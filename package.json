@@ -25,8 +25,7 @@
   "scripts": {
     "start": "yarn run dev:server",
     "dev:server": "yarn run webpack-cli serve --hot --inline --mode development -d inline-source-map",
-    "watch": "yarn run webpack-cli watch -w -d",
-    "build": "yarn run webpack-cli build -p --mode production",
+    "build": "yarn run webpack-cli build --mode production",
     "deploy": "yarn build && yarn run gh-pages -d ."
   }
 }
