@@ -6,7 +6,7 @@ const DELAY = 5;
 const makeCharacter = () => setAttrs(scribbler.fitCurve(100), {
   fill: 'none',
   stroke: pick(['#3881f5', '#f59d38', '#db3535', '#d145ae', '#2ab091']),
-  'stroke-width': '1',
+  'stroke-width': '3',
   pathLength: 1,
   style: style({
     'stroke-dasharray': 1,
