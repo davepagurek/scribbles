@@ -1,0 +1,18 @@
+body {
+  background: #EEE;
+}
+#canvas {
+  background: #FFF;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  40%, 60% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
