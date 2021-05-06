@@ -1,0 +1,32 @@
+{
+  "name": "scribbles",
+  "version": "1.0.0",
+  "description": "Scribbled portraits",
+  "main": "src/index.js",
+  "repository": "git@github.com:davepagurek/scribbles.git",
+  "author": "Dave Pagurek <dave@davepagurek.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-proposal-function-bind": "^7.12.13",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.14.1",
+    "babel-loader": "^8.2.2",
+    "webpack-cli": "^4.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "gh-pages": "^3.1.0",
+    "webpack": "^5.36.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "start": "yarn run dev:server",
+    "dev:server": "yarn run webpack-cli serve --hot --inline --mode development -d inline-source-map",
+    "watch": "yarn run webpack-cli watch -w -d",
+    "build": "yarn run webpack-cli build -p --mode production",
+    "deploy": "yarn build && yarn run gh-pages -d ."
+  }
+}
